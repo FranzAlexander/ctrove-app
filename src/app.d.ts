@@ -13,7 +13,11 @@ declare global {
 		interface PageData {
 			session: Session | null;
 		}
-		// interface Platform {}
+		interface Platform {
+			env?: {
+				devctrove_kv: KVNamespace;
+			};
+		}
 	}
 }
 

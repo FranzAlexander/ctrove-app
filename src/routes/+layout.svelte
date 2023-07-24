@@ -4,10 +4,8 @@
 	import type { LayoutData } from './$types';
 
 	export let data: LayoutData;
-
-	console.log(data.categories);
 </script>
 
-<Header />
+<Header categories={data?.categories} categoryUrls={data?.categoryUrls} />
 
 <slot />

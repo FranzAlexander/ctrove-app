@@ -2,6 +2,8 @@ import { createSupabaseLoadClient } from '@supabase/auth-helpers-sveltekit';
 import type { Database } from '../supabase';
 import type { LayoutLoad } from './$types';
 import { PUBLIC_SUPABASE_ANON_KEY, PUBLIC_SUPABASE_URL } from '$env/static/public';
+import type { Categories } from '$lib/interfaces/category';
+import { generateUrls } from '$lib/utils';
 
 export const load = (async ({ fetch, data, depends }) => {
 	depends('supabase:auth');
@@ -18,14 +20,15 @@ export const load = (async ({ fetch, data, depends }) => {
 		fetch('/api/category', {
 			method: 'GET',
 			headers: { 'Content-Type': 'application/json' }
-		}).then((res) => res.json())
+		})
+			.then((res) => res.json())
+			.then((data) => data)
 	]);
 
-	// const mappedData = response.map(({ id, name, subcategory }) => ({
-	// 	id,
-	// 	name,
-	// 	subCategories: subcategory.map(({ id, name }) => ({ id, name }))
-	// }));
-
-	return { supabase, session, categories };
+	return {
+		supabase,
+		session,
+		categories: categories.categories as Categories,
+		categoryUrls: categories.categoryUrls
+	};
 }) satisfies LayoutLoad;

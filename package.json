@@ -13,6 +13,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-cloudflare": "^2.3.1",
 		"@sveltejs/kit": "^1.20.4",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
@@ -32,6 +33,9 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource/montserrat": "^5.0.5",
+		"@fontsource/open-sans": "^5.0.5",
+		"@fontsource/roboto": "^5.0.5",
 		"@supabase/auth-helpers-sveltekit": "^0.10.1",
 		"@supabase/supabase-js": "^2.26.0"
 	}
