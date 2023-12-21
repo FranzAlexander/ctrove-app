@@ -48,3 +48,5 @@ This will start the development server. By default, the site should be available
 ---------------------------------
 
 Contact For any inquiries or discussions related to this project, feel free to contact me at alexbalcombe4@gmail.com.
+
+ALL KEYS ARE DISABLED AND WILL NOT WORK.
