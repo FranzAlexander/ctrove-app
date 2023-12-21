@@ -1,38 +1,50 @@
-# create-svelte
+CTrove Ecommerce website
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Status: Abandoned
 
-## Creating a project
+---------------------------------
 
-If you're seeing this, you've probably already done this step. Congrats!
+Project Overview:
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+CTrove was envisioned as a tech ecommerce website catering to customers with specific tech needs. The design focused on minimalism and efficiency, aiming to streamline the product search and browsing experience.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+---------------------------------
 
-## Developing
+Key Features:
+- Minimalist UI Design: A clean, user-friendly interface designed for effortless navigation and product discovery.
+- Compact Product Information: Essential details provided in a concise format for quick customer reference.
+- Extensive Product Filtering: Advanced filtering options to help customers quickly find the products they need.
+- Rapid Load Times: Optimized for speed to enhance user experience and engagement.
+- Responsive Design: Fully adaptable to various screen sizes and devices.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+---------------------------------
 
-```bash
-npm run dev
+Technologies Used:
+- Frontend: SvelteKit with Tailwind CSS.
+- Backend: Supabase for data management; Redis for efficient caching.
+- Hosting: Cloudflare for high-performance hosting.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+---------------------------------
 
-## Building
+Installation and Running
 
-To create a production version of your app:
+Ensure you have Node.js installed on your system to run this SvelteKit project.
 
-```bash
-npm run build
-```
+Clone the repository using Git:
 
-You can preview the production build with `npm run preview`.
+    git clone https://github.com/FranzAlexander/ctrove-app.git
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Installing Dependencies:
+
+    cd ctrove-app
+    npm install
+
+Running the Project:
+
+    npm run dev
+
+This will start the development server. By default, the site should be available at http://localhost:3000.
+
+---------------------------------
+
+Contact For any inquiries or discussions related to this project, feel free to contact me at alexbalcombe4@gmail.com.
